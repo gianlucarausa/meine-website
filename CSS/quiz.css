@@ -1,4 +1,22 @@
-.main{
+
+.quiz {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
     justify-content: center;
-    align-items: center;
+}
+
+.quizinput {
+    border-radius: 10px;
+    position: relative;
+    border-color: #a855f7;
+    padding: 10px; 
+    margin-top: 10px; 
+}
+
+.frage {
+    position: relative;
+    bottom: auto; 
+    font-size: 18px; 
+    text-align: center; 
 }
