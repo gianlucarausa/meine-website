@@ -157,3 +157,55 @@ body {
     blinkCursor 0.5s step-end infinite alternate;
   margin-top: 1.5em;
 }
+
+.Felxbox{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.PersönlicheDaten{
+  display: flex;
+  flex-direction: row;
+}
+
+.s1 .s2 {
+  display: flex;
+  flex-direction: column;
+}
+.s1 {
+  margin-right: 20px;
+}
+
+.s2{
+  margin-left: 20px;
+}
+
+.element1{
+  display: flex;
+  flex-direction: column;
+}
+
+.element2{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 75vh
+}
+
+.info-section {
+  text-align: center; /* Zentriert die Inhalte */
+  margin: 0; /* Entfernt äußere Abstände */
+  padding: 0; /* Entfernt Innenabstände */
+}
+
+.info-section h1 {
+  margin-bottom: 10px; /* Abstand zwischen Überschrift und Details */
+}
+
+.details p {
+  margin: 5px 0; /* Minimale Abstände zwischen Adresse und Kontakt */
+}
+
+button {
+  margin-bottom: 5px;
+}
