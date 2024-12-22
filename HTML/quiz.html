@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiz</title>
+    <title>Taschenrechner</title>
     <meta name="language" content="de">
     <meta name="author" content="Gian-Luca Rausa">
     <meta name="date" content="2024-12-18">
@@ -59,7 +59,7 @@
                   <a class="nav-link" href="../HTML/facts.html">Fakten Generator</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../HTML/quiz.html">Quiz</a>
+                  <a class="nav-link" href="../HTML/quiz.html">Taschenrechner</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -74,9 +74,22 @@
         </nav>
       </header>
       <main>
-        <div class="quiz"> 
-        <span id="frage">Was ergbit 2+5?</span>
-        <input class="quizinput" id="quizinputid" type="text" placeholder="Dein Antwort bitte" onblur="quiz1();">
+        <div class="taschenrechner"> 
+          <h3>Taschenrechner</h3>
+        <span id="zahl1text">Geb deine erste Zahl ein</span>
+        <input class="quizinput" id="zahl1" type="number" placeholder="First Number">
+        <span id="zahl2text">Geb deine zweite Zahl ein</span>
+        <input class="quizinput" id="zahl2" type="number" placeholder="Second Number">
+        <select class="form-select" name="Rechenart" id="rechenart" size="1">
+          <option value="Addieren">Addieren</option>
+          <option value="Subtrahieren">Subtrahieren</option>
+          <option value="Multiplizieren">Multiplizieren</option>
+          <option value="Dividieren">Dividieren</option>
+        </select>
+        <div class="buttons">
+        <button class="btn btn-primary" id="rechnenbutton" type="submit" onclick="calculate();">Rechnen</button>
+        <button class="btn btn-primary" id="resetbutton" type="reset" onclick="reset();" >Reset</button>
+      </div>
         </div>
       </main>
       
